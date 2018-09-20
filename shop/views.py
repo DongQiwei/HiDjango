@@ -1,4 +1,4 @@
-from django.shortcuts import render
+﻿from django.shortcuts import render
 from django.http import HttpResponse
 from shop.models import USER
 # Create your views here.
@@ -15,3 +15,5 @@ def login(request):
             return HttpResponse('登陆成功')
         else:
             return HttpResponse('登录失败!')
+def logout(request):
+        pass
